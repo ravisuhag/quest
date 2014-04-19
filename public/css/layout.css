@@ -3,7 +3,6 @@
   height: 100%
 }
 body {
-  padding-top:60px;
   font-family:'TradeGothic', sans-serif;
   color: #000;
   /*#34495e*/
@@ -43,14 +42,14 @@ a:focus {
 }
 /*-------------[ Global: Navbar]-------------------*/
  .insedge-nav {
-  background: rgb(61, 73, 95);
+  background: transparent !important;
   border-bottom: 1px solid rgb(61, 73, 95);
-  color: #fff;
+  color: #31CCB0;
   padding: 10px 0 0px;
   box-shadow:0 2px 12px rgba(0, 0, 0, 0.0);
 }
 .insedge-nav .navbar-brand, .insedge-nav .navbar-brand:hover, .insedge-nav .navbar-brand:focus {
-  color: #fff;
+  color: #31CCB0;
   font-weight: bold;
   font-size: 22px
 }
@@ -58,10 +57,10 @@ a:focus {
   color: #aaa;
 }
 .insedge-nav .navbar-nav > li > a:hover, .insedge-nav .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #31CCB0;
 }
 .insedge-nav .navbar-nav > .active > a, .insedge-nav .navbar-nav > .active > a:hover, .insedge-nav .navbar-nav > .active > a:focus {
-  color: #fff;
+  color: #31CCB0;
   background-color: transparent;
 }
 .insedge-nav .navbar-toggle {
@@ -81,7 +80,10 @@ a:focus {
   height: 30px
 }
 /*-------------[ Search Bar]-------------------*/
- .search-box {
+ .monster {
+  height: 300px;
+}
+.search-box {
   text-align: center;
 }
 .header-search {
@@ -131,3 +133,42 @@ a:focus {
   color: #fff;
   padding-left: 5px;
 }
+.microphone {
+  width: 35px;
+  height: 35px;
+  background-color: #31CCB0;
+  border-radius: 45px;
+  padding: 10px;
+  margin: 0;
+  border:0;
+  color: #fff;
+}
+.results ul{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background-color:#353F52;
+  border-color: #303a45;
+}
+.results ul li{
+  background-color:#353F52;
+  border-color: #303a45;
+  color: #fff;
+}
+.results ul li.active{
+  background: #31CCB0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

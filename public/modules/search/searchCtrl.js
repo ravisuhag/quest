@@ -5,7 +5,7 @@ search.controller('SearchCtrl', ['$scope','Tags','$location',
     
     // Search Box
     $scope.navsearch = {
-      minimumInputLength: 1,
+      minimumInputLength: 3,
       placeholder: 'Search',
       maximumSelectionSize: 1,
       'multiple': true,

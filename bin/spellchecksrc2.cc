@@ -173,14 +173,14 @@ void init2() {
       //if(s=="gol") cout<<"from2: "<<s3<<endl;
 #ifdef debug
       if(c1<20) {
-  //cout<<"Tokenized into: "<<s<<endl;
+	//cout<<"Tokenized into: "<<s<<endl;
       }
 #endif
       if(s.size()>0) {
-  s2 += (s+sp);
-  freq[s]++;//1.0/(1.0+freq[s]);
-  insert(0,root,s);
-  //a.insert(s);
+	s2 += (s+sp);
+	freq[s]++;//1.0/(1.0+freq[s]);
+	insert(0,root,s);
+	//a.insert(s);
       }
     }
     if(s2.size()>0) {
@@ -225,7 +225,7 @@ void doit(string s) {
     if(!it->size()) continue;
     for(int i=0; i<p.size(); i++){ 
       for(int j=0; j<it->size(); j++) {
-  dp[i][j] = -1.0;
+	dp[i][j] = -1.0;
       }
     }
     double x = go(p.size()-1,it->size()-1,*it);
@@ -255,8 +255,9 @@ string btrans(string x) {
 }
 
 void doit2(string s) {
+  final_ans= "";
   string fname = "ans_"+s+".txt";
-  ofstream fout(fname.c_str());
+  // ofstream fout(fname.c_str());
   d.clear();
   while(!ans2.empty()) ans2.pop();
   stringstream ss(s);
@@ -274,11 +275,11 @@ void doit2(string s) {
     }
     ans = ans3;
     for(set<pair<double,string> >::iterator it = ans.begin(); it!=ans.end(); it++,pp++) {
-      fout<<"("<<it->second<<","<<it->first<<") ";
+      // fout<<"("<<it->second<<","<<it->first<<") ";
       //if(s=="granding") cout<<it->first<<" "<<it->second<<endl;
       if(pp<5) d2.push_back(make_pair(it->first,it->second));
     }
-    fout<<endl;
+    // fout<<endl;
     d.push_back(d2);
     if(d2.size()!=5) {
       cout<<"WTF"<<endl;
@@ -303,25 +304,25 @@ void doit2(string s) {
     do {
       string ret = "";
       for(int j=0; j<tp; j++) {
-  ret+=(tof[j]+sp);
+	ret+=(tof[j]+sp);
       }
       if(find(0,ret,rot2)) {
-  
-  /*
+	
+	/*
       bool f = false;
       for(vector<string>::iterator it = b.begin(); it!=b.end() && (!f); it++) {
-  bool f2 = true;
-  for(int j=0; j<tp; j++) {
-    if(it->find(tof[j])==string::npos) {
-      f2 = false;
-      break;
-    }
-  }
-  f |= f2;
+	bool f2 = true;
+	for(int j=0; j<tp; j++) {
+	  if(it->find(tof[j])==string::npos) {
+	    f2 = false;
+	    break;
+	  }
+	}
+	f |= f2;
       }
       if(f) {
-  */
-  ans2.push(make_pair(cx,ret));
+	*/
+	ans2.push(make_pair(cx,ret));
       }
       
     } while(next_permutation(tof.begin(),tof.end()));
@@ -331,10 +332,12 @@ void doit2(string s) {
   while(!ans2.empty() && tp2<10) {
     tp2++;
     pair<double,string> tpp = ans2.top();
-    fout<<btrans(tpp.second)<<" "<<tpp.first<<endl;
+    // fout<<btrans(tpp.second)<<" "<<tpp.first<<endl;
+    final_ans+= btrans(tpp.second)+";";
     //cout<<tpp.second<<" "<<tpp.first<<endl;
     ans2.pop();
   }
+
 }  
 
 string test[17] = {"home","lappy","vibratory granding","stainless steel sacrap","golf trollieys","duplex tuber","coton kurtis","bottle display stamds","self inking stamds","flask round botton","push botton switches","wedding carf","utility carf","extraction toolls","rubber gromnts","kids gromnts","asbestors fiber"};

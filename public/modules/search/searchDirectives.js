@@ -1,7 +1,7 @@
 search.directive('search', function(Tags) {
   return {
     restrict: 'AE',
-    template: '<input id="ia-search" class="header-search" ui-select2="navsearch" type="hidden" ng-model="selectedQuery">',
+    template: '<input id="ia-search" class="header-search" ui-select2="navsearch" type="text" ng-model="selectedQuery">',
     replace: true,
     controller: ['$scope',
       function($scope) {

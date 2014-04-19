@@ -1,5 +1,4 @@
-// Tag Service - Fetch tags by Search Query : modify acc to select2 : return promise 
-search.factory('Tags', ['$http',
+voice.factory('Tags', ['$http',
   function($http) {
     var Tags = function(data) {
       angular.extend(this, data);
@@ -25,5 +24,3 @@ search.factory('Tags', ['$http',
     return Tags;
   }
 ]);
-
-

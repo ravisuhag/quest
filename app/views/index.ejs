@@ -13,21 +13,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="index.html" class="navbar-brand">GSF Hacks - India Mart</a>
+        <a href="index.html" class="navbar-brand">GSF Hacks</a>
       </div>
       <nav id="scroller" data-offset="60" class="navbar-collapse insedge-navbar-collapse collapse " role="navigation">
         <ul class="nav navbar-nav navbar-right">
           <li class="active">
-            <a  href="#home">HOME</a>
+            <a  href="#/">Context Recognition</a>
+          </li>
+          <li>
+            <a  href="#/voice">Voice</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <div class="text-center">
-   <!--  <img src="/img/mon.png" alt=""> -->
-  </div>
-	<div ng-include src="'modules/search/search.html'" scope="" onload=""></div>
+  
+  <ng-view></ng-view>
 	
 	<% include includes/foot%>
 

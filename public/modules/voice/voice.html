@@ -1,0 +1,13 @@
+<div class="text-center">
+  <img class="monster" src="/img/mon4.png" alt="">
+</div>
+<br>
+<div class="text-center">
+  <input class="microphone" ng-model="micvalue" id="mic" x-webkit-speech="">
+</div>
+<div class="results">
+  <ul class="list-group">
+  	<li class="list-group-item active"><strong>Voice Input:</strong> {{micvalue}}</li>
+    <li ng-repeat="tag in matchedtags.results" class="list-group-item"> {{tag.text}}</li>
+  </ul>
+</div>
