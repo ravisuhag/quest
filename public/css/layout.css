@@ -1,0 +1,44 @@
+/*-------------[ Global: Navbar]-------------------*/
+.insedge-nav{
+	background: rgb(61,73,95);
+	border-bottom: 1px solid rgb(61,73,95);
+	color: #fff;
+	padding: 10px 0 0px;
+	box-shadow:0 2px 12px rgba(0, 0, 0, 0.0);
+}
+.insedge-nav .navbar-brand,
+.insedge-nav .navbar-brand:hover,
+.insedge-nav .navbar-brand:focus {
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px
+}
+.insedge-nav .navbar-nav > li > a {
+  color: #aaa;
+}
+.insedge-nav .navbar-nav > li > a:hover,
+.insedge-nav .navbar-nav > li > a:focus  {
+  color: #fff;
+}
+.insedge-nav .navbar-nav > .active > a,
+.insedge-nav .navbar-nav > .active > a:hover,
+.insedge-nav .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: transparent;	
+}
+.insedge-nav .navbar-toggle {
+  border-color: transparent;
+}
+.insedge-nav .navbar-toggle:hover {
+  background-color: transparent;
+  border-color: #f5f5f5;
+}
+.insedge-nav .navbar-toggle .icon-bar {
+	background-color: #E85272;
+}
+.insedge-nav .navbar-toggle:hover .icon-bar {
+	background-color: #c83252;
+}
+.avatar{
+	height: 30px
+}
