@@ -11,3 +11,5 @@ modules/public/
 modules/views/
 /public/build/
 /public/lib/
+
+bin/product_names.txt
