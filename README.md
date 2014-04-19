@@ -1,2 +1,23 @@
-# GSF-Hacks Solution for India Mart Problem
+#GSF-Hacks 
+
+####Problem Statement
+Use any or all of the following to find desirable products on ecommerce sites. This problem and data set was given by India Mart.
+- NLP (Natural Language Processing)
+- Voice Recogition
+- Specc Check 
+- Context Recognition
+
+###Technology Stack
+- C++
+- NodeJs
+- AngularJS
+- Express
+- Bootstrap
+
+### Alorithm Used
+- ABC
+
+
+
+
 
