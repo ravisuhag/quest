@@ -6,7 +6,7 @@
   "author": "Ravi Suhag",
   "repository": {
     "type": "git",
-    "url": "https://suhagravi@bitbucket.org/suhagravi/GSF-Hacks.git"
+    "url": "git@github.com:ravisuhag/GSF-Hacks.git"
   },
   "engines": {
     "node": "0.10.x",
