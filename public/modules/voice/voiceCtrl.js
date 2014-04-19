@@ -1,8 +1,10 @@
 var voice = angular.module('Voice', ['ui.select2']);
 
-voice.controller('voiceCtrl', ['$scope','Tags',
-  function($scope, Tags) {
+voice.controller('voiceCtrl', ['$scope','$rootScope','Tags',
+  function($scope,$rootScope, Tags) {
 
+  	$rootScope.menuvoice="active";
+    $rootScope.menucr="";
   	$scope.micvalue="";
   	$scope.matchedtags="";
 
