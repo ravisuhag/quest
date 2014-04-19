@@ -7,7 +7,8 @@ body{
   font-family: 'TradeGothic', sans-serif;
   color: #000; /*#34495e*/
   font-size: 16px;
-  background-color: #f8f2e3;
+  background: #3d4860 url(../img/landscape.svg) left bottom repeat-x;
+  background-position: 50% 100%;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: "Arial Rounded MT Bold"; 
@@ -89,13 +90,28 @@ a:focus {
 /*-------------[ Search Bar]-------------------*/
 .search-box{
   text-align: center;
+  margin-top: 10px;
 }
 .header-search{
   min-width: 500px;
 }
 
 
-
+.search-box .select2-container-multi .select2-choices{
+  background-color: #353F52;
+  background-image: none;
+  box-shadow: none;
+  border:solid 1px #303a45;
+  border-radius: 4px;
+}
+.select2-container-multi .select2-choices .select2-search-field input{
+  height: 50px;
+  border-radius: 10px;
+}
+.select2-container-multi .select2-choices .select2-search-field input,
+.select2-container-multi .select2-choices .select2-search-field input:focus{
+  outline: 0;
+}
 
 
 

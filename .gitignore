@@ -12,4 +12,8 @@ modules/views/
 /public/build/
 /public/lib/
 
-bin/product_names.txt
+/bin/product_names.txt
+/bin/node_modules/
+/bin/build
+product_names.txt
+ans_lappy.txt
