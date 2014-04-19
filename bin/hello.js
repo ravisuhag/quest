@@ -3,7 +3,3 @@ addon.initdict();
 
 console.log(addon.matched());
 
-console.log(addon.matched());
-console.log(addon.matched());
-
-console.log(addon.matched());
