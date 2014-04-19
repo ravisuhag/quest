@@ -5,6 +5,8 @@ var express = require('express'),
     flash = require('connect-flash'),
     helpers = require('view-helpers'),
     config = require('./config');
+    
+var bodyParser = require('body-parser');
 
 module.exports = function(app) {
   app.set('showStackError', true);
@@ -38,7 +40,7 @@ module.exports = function(app) {
 
   app.configure(function() {
     app.use(express.cookieParser());
-    app.use(express.bodyParser());
+    app.use(bodyParser());
     app.use(express.urlencoded());
     app.use(express.json());
     app.use(express.methodOverride());
@@ -51,9 +53,6 @@ module.exports = function(app) {
 
     //connect flash for flash messages
     app.use(flash());
-
-    app.use(passport.initialize());
-    app.use(passport.session());
 
     //dynamic helpers
     app.use(helpers(config.app.name));

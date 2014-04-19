@@ -9,9 +9,6 @@ var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
 //App initialization
 var app = express();
 
-//For Parsing POST requests
-app.use(express.bodyParser());
-
 //Express app settings
 require('./config/express')(app);
 
