@@ -16,4 +16,4 @@ modules/views/
 /bin/node_modules/
 /bin/build
 product_names.txt
-ans_lappy.txt
+*.txt

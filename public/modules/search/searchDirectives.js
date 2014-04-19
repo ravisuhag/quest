@@ -15,6 +15,9 @@ search.directive('search', function(Tags) {
 
         if (e.added) {
           console.log(e.added);
+          scope.selectedQuery =[];
+          scope.$apply();
+          angular.element('#s2id_autogen1').val(e.added.text);
         }
       });
     }

@@ -1,37 +1,38 @@
 /*------------Base Rules------------------ */
-html, body{
+ html, body {
   height: 100%
 }
-body{
+body {
   padding-top:60px;
-  font-family: 'TradeGothic', sans-serif;
-  color: #000; /*#34495e*/
+  font-family:'TradeGothic', sans-serif;
+  color: #000;
+  /*#34495e*/
   font-size: 16px;
   background: #3d4860 url(../img/landscape.svg) left bottom repeat-x;
   background-position: 50% 100%;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: "Arial Rounded MT Bold"; 
+h1, h2, h3, h4, h5, h6 {
+  font-family:"Arial Rounded MT Bold";
 }
-h1{
+h1 {
   color:#fff;
-  font-size:80px; 
-  text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+  font-size:80px;
+  text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-h2{
+h2 {
   color:#fff;
-  font-size:60px; 
+  font-size:60px;
   line-height: 70px;
-  text-shadow:2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow:2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-h3{
+h3 {
   font-size:30px;
 }
-h4{
+h4 {
   font-size:25px;
   line-height: 30px
 }
-.dotted-seperator{
+.dotted-seperator {
   border-color: #ddd;
   border-style: dashed;
 }
@@ -40,18 +41,15 @@ a:focus {
   outline: 1px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-
 /*-------------[ Global: Navbar]-------------------*/
-.insedge-nav{
-	background: rgb(61,73,95);
-	border-bottom: 1px solid rgb(61,73,95);
-	color: #fff;
-	padding: 10px 0 0px;
-	box-shadow:0 2px 12px rgba(0, 0, 0, 0.0);
+ .insedge-nav {
+  background: rgb(61, 73, 95);
+  border-bottom: 1px solid rgb(61, 73, 95);
+  color: #fff;
+  padding: 10px 0 0px;
+  box-shadow:0 2px 12px rgba(0, 0, 0, 0.0);
 }
-.insedge-nav .navbar-brand,
-.insedge-nav .navbar-brand:hover,
-.insedge-nav .navbar-brand:focus {
+.insedge-nav .navbar-brand, .insedge-nav .navbar-brand:hover, .insedge-nav .navbar-brand:focus {
   color: #fff;
   font-weight: bold;
   font-size: 22px
@@ -59,15 +57,12 @@ a:focus {
 .insedge-nav .navbar-nav > li > a {
   color: #aaa;
 }
-.insedge-nav .navbar-nav > li > a:hover,
-.insedge-nav .navbar-nav > li > a:focus  {
+.insedge-nav .navbar-nav > li > a:hover, .insedge-nav .navbar-nav > li > a:focus {
   color: #fff;
 }
-.insedge-nav .navbar-nav > .active > a,
-.insedge-nav .navbar-nav > .active > a:hover,
-.insedge-nav .navbar-nav > .active > a:focus {
+.insedge-nav .navbar-nav > .active > a, .insedge-nav .navbar-nav > .active > a:hover, .insedge-nav .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: transparent;	
+  background-color: transparent;
 }
 .insedge-nav .navbar-toggle {
   border-color: transparent;
@@ -77,60 +72,62 @@ a:focus {
   border-color: #f5f5f5;
 }
 .insedge-nav .navbar-toggle .icon-bar {
-	background-color: #E85272;
+  background-color: #E85272;
 }
 .insedge-nav .navbar-toggle:hover .icon-bar {
-	background-color: #c83252;
+  background-color: #c83252;
 }
-.avatar{
-	height: 30px
+.avatar {
+  height: 30px
 }
-
-
 /*-------------[ Search Bar]-------------------*/
-.search-box{
+ .search-box {
   text-align: center;
-  margin-top: 10px;
 }
-.header-search{
+.header-search {
   min-width: 500px;
 }
-
-
-.search-box .select2-container-multi .select2-choices{
+.search-box .select2-container-multi .select2-choices {
   background-color: #353F52;
   background-image: none;
   box-shadow: none;
   border:solid 1px #303a45;
   border-radius: 4px;
 }
-.select2-container-multi .select2-choices .select2-search-field input{
+.select2-container-multi .select2-choices .select2-search-field input {
   height: 50px;
   border-radius: 10px;
 }
-.select2-container-multi .select2-choices .select2-search-field input,
-.select2-container-multi .select2-choices .select2-search-field input:focus{
+.select2-container-multi .select2-choices .select2-search-field input, .select2-container-multi .select2-choices .select2-search-field input:focus {
   outline: 0;
+  color: #ccc
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+  background: #353F52 url('select2-spinner.gif') no-repeat 100% !important;
+}
+.select2-drop {
+  background-color:#353F52;
+  border-color: #303a45;
+  color: #fff;
+  box-shadow: none;
+}
+.select2-results {
+  padding: 0px;
+  margin: 0px;
+}
+.select2-results .select2-highlighted {
+  background: #31CCB0;
+  color: #fff;
+}
+.select2-results .select2-result-label {
+  padding: 6px 10px 7px;
+  margin: 0;
+  cursor: pointer;
+  min-height: 1em;
+}
+.select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit {
+  background: #353F52;
+  display: list-item;
+  color: #fff;
+  padding-left: 5px;
+}
