@@ -6,7 +6,8 @@ body{
   padding-top:60px;
   font-family: 'TradeGothic', sans-serif;
   color: #000; /*#34495e*/
-  font-size: 16px
+  font-size: 16px;
+  background-color: #f8f2e3;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: "Arial Rounded MT Bold"; 

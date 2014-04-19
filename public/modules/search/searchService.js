@@ -14,7 +14,7 @@ search.factory('Tags', ['$http',
           rawtags.forEach(function(element, index) {
             tags.results.push({
               id: index,
-              text: element.name,
+              text: element.text,
             });
           });
           return tags;
