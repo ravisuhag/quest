@@ -1,4 +1,4 @@
-navbar.directive('search', function(Tags) {
+search.directive('search', function(Tags) {
   return {
     restrict: 'AE',
     template: '<input id="ia-search" class="header-search" ui-select2="navsearch" type="hidden" ng-model="selectedQuery">',
