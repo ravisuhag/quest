@@ -6,7 +6,7 @@
 #include <sstream>
 
 
-
+using namespace std;
 
 #define debug
 //#undef debug

@@ -1,10 +1,10 @@
 #include <node.h>
 #include <v8.h>
 
-#include <spellchecksrc>
+#include "spellchecksrc.cc"
 
 using namespace v8;
-using namespace std;
+
 
 
 Handle<Value> initdictMethod(const Arguments& args) {
