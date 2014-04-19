@@ -2,7 +2,6 @@
  * Module dependencies.
  */
 var express = require('express'),
-    passport = require('passport'),
     flash = require('connect-flash'),
     helpers = require('view-helpers'),
     config = require('./config');
@@ -47,7 +46,7 @@ module.exports = function(app) {
 
     // Express Mongo Session Store
     app.use(express.session(
-        {secret: 'Jarvis'}
+        {secret: 'GSF-Hacks'}
     ));
 
     //connect flash for flash messages
