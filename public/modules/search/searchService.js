@@ -1,31 +1,28 @@
-// Location Service -- | Fetch Locs : Modify acc go select2 : return promise
-
-navbar.factory('Locs', ['$http',
+// Tag Service - Fetch tags by Search Query : modify acc to select2 : return promise 
+search.factory('Tags', ['$http',
   function($http) {
-    var Locs = function(data) {
+    var Tags = function(data) {
       angular.extend(this, data);
     };
 
-    Locs.fetch = function(name) {
-      return $http.get('/locs?name=' + name)
+    Tags.fetch = function(query) {
+      return $http.get('/tags?q=' + query)
         .then(function(response) {
+          rawtags = response.data;
+          var tags = {results: []};
 
-          var locs = {
-            results: []
-          };
-          rawlocs = response.data;
-          rawlocs.forEach(function(element, index) {
-            locs.results.push({
+          rawtags.forEach(function(element, index) {
+            tags.results.push({
               id: index,
-              _id: element.id,
-              text: element.name
+              text: element.name,
             });
           });
-          return locs;
+          return tags;
         });
     };
 
-    return Locs;
+    return Tags;
   }
 ]);
+
 
