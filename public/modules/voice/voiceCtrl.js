@@ -5,6 +5,9 @@ voice.controller('voiceCtrl', ['$scope','$rootScope','Tags',
 
   	$rootScope.menuvoice="active";
     $rootScope.menucr="";
+    $rootScope.menunlp="";
+
+
   	$scope.micvalue="";
   	$scope.matchedtags="";
 

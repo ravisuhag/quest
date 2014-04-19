@@ -4,6 +4,7 @@ home.controller('homeCtrl', ['$scope','$rootScope',
   function($scope, $rootScope) {
   	$rootScope.menucr="active";
   	$rootScope.menuvoice="";
+  	$rootScope.menunlp="";
 
   }
 ]);

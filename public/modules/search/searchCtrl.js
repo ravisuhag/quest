@@ -1,8 +1,8 @@
 var search = angular.module('Search', ['ui.select2']);
 
-search.controller('SearchCtrl', ['$scope','Tags','$location',
-  function($scope,Tags,$location) {
-    
+search.controller('SearchCtrl', ['$scope', 'Tags', '$location',
+  function($scope, Tags, $location) {
+
     // Search Box
     $scope.navsearch = {
       minimumInputLength: 3,
@@ -10,6 +10,8 @@ search.controller('SearchCtrl', ['$scope','Tags','$location',
       maximumSelectionSize: 1,
       'multiple': true,
       query: function(query) {
+
+
         Tags.fetch(query.term).then(function(tags) {
           query.callback(tags);
         });

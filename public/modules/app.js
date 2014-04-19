@@ -1,5 +1,5 @@
 var gsfhacks = angular.module('Gsfhacks',
-	['ngRoute','Home','Voice', 'Search']
+	['ngRoute','Home','Voice','Nlp', 'Search']
 );
 
 
@@ -15,6 +15,10 @@ gsfhacks.config(['$routeProvider','$locationProvider',
       when('/voice', {
         templateUrl: '/modules/voice/voice.html',
         controller: 'voiceCtrl'
+      }).
+      when('/nlp', {
+        templateUrl: '/modules/nlp/nlp.html',
+        controller: 'nlpCtrl'
       }).
       otherwise({
         redirectTo: '/'
