@@ -1,5 +1,5 @@
 var gsfhacks = angular.module('Gsfhacks',
-	['ngRoute','Home']
+	['ngRoute','Home', 'Search']
 );
 
 

@@ -1,3 +1,44 @@
+/*------------Base Rules------------------ */
+html, body{
+  height: 100%
+}
+body{
+  padding-top:60px;
+  font-family: 'TradeGothic', sans-serif;
+  color: #000; /*#34495e*/
+  font-size: 16px
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Arial Rounded MT Bold"; 
+}
+h1{
+  color:#fff;
+  font-size:80px; 
+  text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+}
+h2{
+  color:#fff;
+  font-size:60px; 
+  line-height: 70px;
+  text-shadow:2px 2px 4px rgba(0,0,0,0.7);
+}
+h3{
+  font-size:30px;
+}
+h4{
+  font-size:25px;
+  line-height: 30px
+}
+.dotted-seperator{
+  border-color: #ddd;
+  border-style: dashed;
+}
+a:focus {
+  outline: 1px dotted #666;
+  outline: 1px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 /*-------------[ Global: Navbar]-------------------*/
 .insedge-nav{
 	background: rgb(61,73,95);
