@@ -1,0 +1,10 @@
+lapky 0.544
+lappie 0.556
+aappa 0.576
+happy 0.64
+nappy 0.64
+sappy 0.64
+lapp 0.68
+loupe 0.696
+appy 0.72
+lapel 0.784
