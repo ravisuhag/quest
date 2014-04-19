@@ -13,10 +13,10 @@ var app = express();
 app.use(express.bodyParser());
 
 //Express app settings
-require('./config/express')(app, passport, auth);
+require('./config/express')(app);
 
 //Routes Intialization
-require('./config/routes')(app, passport, auth);
+require('./config/routes')(app);
 
 
 // Start app by listening to port

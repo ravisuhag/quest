@@ -1,0 +1,35 @@
+{
+    "name": "GSF-Hacks",
+    "description": "GSF-Hacks Solution.",
+    "version": "0.1.0",
+    "private": true,
+    "author": "Ravi Suhag, Manish, Amit",
+    "repository": {
+        "type": "git",
+        "url": "https://suhagravi@bitbucket.org/suhagravi/GSF-Hacks.git"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    },
+    "scripts": {
+        "postinstall": "bower install"
+    },
+    "dependencies": {
+        "express": "latest",
+        "ejs": "latest",
+        "async": "latest",
+        "connect-flash": "latest",
+        "crypto": "latest",
+        "underscore": "latest",
+        "view-helpers": "latest",
+        "forever": "latest",
+        "bower": "latest",
+        "grunt": "latest",
+        "grunt-cli": "latest",
+        "grunt-env": "latest",
+        "csv": "latest"
+    },
+    "devDependencies": {
+    }
+}
