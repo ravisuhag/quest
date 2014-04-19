@@ -1,0 +1,12 @@
+{
+  "name": "GSF-Hacks",
+  "version": "0.1.0",
+  "dependencies": {
+    "bootstrap": "3.0.x",
+    "angular": "1.2.9",
+    "d3": "~3.3.13",
+    "angular-ui-select2": "0.0.4",
+    "angular-sanitize": "~1.2.9",
+    "angular-route": "~1.2.9"
+  }
+}
