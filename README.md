@@ -1,2 +1,2 @@
-# GSF-Hacks Solution for India Mart Problem
+## GSF-Hacks Solution for India Mart Problem
 

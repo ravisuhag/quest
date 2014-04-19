@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'owner', 'ls', 'GSF-Hacks' ]
+2 info using npm@1.4.4
+3 info using node@v0.10.26
+4 verbose node symlink /usr/local/bin/node
+5 verbose url raw GSF-Hacks
+6 verbose url resolving [ 'https://registry.npmjs.org/', './GSF-Hacks' ]
+7 verbose url resolved https://registry.npmjs.org/GSF-Hacks
+8 info trying registry request attempt 1 at 04:27:08
+9 http GET https://registry.npmjs.org/GSF-Hacks
+10 http 404 https://registry.npmjs.org/GSF-Hacks
+11 silly registry.get cb [ 404,
+11 silly registry.get   { date: 'Sat, 19 Apr 2014 22:57:24 GMT',
+11 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+11 silly registry.get     'content-type': 'application/json',
+11 silly registry.get     via: '1.1 varnish',
+11 silly registry.get     'cache-control': 'max-age=0',
+11 silly registry.get     'content-length': '52',
+11 silly registry.get     'accept-ranges': 'bytes',
+11 silly registry.get     age: '0',
+11 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-sv60-SJC3',
+11 silly registry.get     'x-cache': 'MISS, MISS',
+11 silly registry.get     'x-cache-hits': '0, 0',
+11 silly registry.get     'x-timer': 'S1397948244.278870583,VS0,VS34,VE116,VE155',
+11 silly registry.get     'keep-alive': 'timeout=10, max=50',
+11 silly registry.get     connection: 'Keep-Alive' } ]
+12 error owner ls Couldn't get owner data GSF-Hacks
+13 error 404 'GSF-Hacks' is not in the npm registry.
+13 error 404 You should bug the author to publish it
+13 error 404
+13 error 404 Note that you can also install from a
+13 error 404 tarball, folder, or http url, or git url.
+14 error System Darwin 13.1.0
+15 error command "node" "/usr/local/bin/npm" "owner" "ls" "GSF-Hacks"
+16 error cwd /Users/ravisuhag/MyStuff/Workspace/www/nodebox/GSF-Hacks
+17 error node -v v0.10.26
+18 error npm -v 1.4.4
+19 error code E404
+20 verbose exit [ 1, true ]

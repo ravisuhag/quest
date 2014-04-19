@@ -3,7 +3,7 @@
   "description": "GSF-Hacks Solution.",
   "version": "0.1.0",
   "private": true,
-  "author": "Ravi Suhag, Manish, Amit",
+  "author": "Ravi Suhag",
   "repository": {
     "type": "git",
     "url": "https://suhagravi@bitbucket.org/suhagravi/GSF-Hacks.git"
@@ -30,7 +30,8 @@
     "grunt-env": "latest",
     "csv": "latest",
     "body-parser": "^1.0.2",
-    "compression": "^1.0.1"
+    "compression": "^1.0.1",
+    "bower":"latest"
   },
   "devDependencies": {}
 }
