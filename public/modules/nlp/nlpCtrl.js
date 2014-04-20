@@ -16,16 +16,19 @@ nlp.controller('nlpCtrl', ['$scope', 'Nlpres', '$rootScope', 'Tags',
 
         Nlpres.fetch(query.term).then(function(response) {
 
-          var nouns = new Array(),
-            verbs = new Array(),
-            adjs = new Array();
+          $scope.nouns = [];
+          $scope.verbs = [];
+          $scope.adjs = [];
           var goodString = "";
           var ar = response.data.keyword_extractor.keywords;
-          for (var i = 0; i < ar.length; i++){
-            if (ar[i].tags === "A") adjs.push(ar[i].term), goodString += ar[i].term + " ";
-            else if (ar[i].tags === "N") nouns.push(ar[i].term), goodString += ar[i].term + " ";
-            else if (ar[i].tags === "V") verbs.push(ar[i].term);
+          for (var i = 0; i < ar.length; i++) {
+            if (ar[i].tags === "A") $scope.adjs.push(ar[i].term), goodString += ar[i].term + " ";
+            else if (ar[i].tags === "N") $scope.nouns.push(ar[i].term), goodString += ar[i].term + " ";
+            else if (ar[i].tags === "V") $scope.verbs.push(ar[i].term);
           }
+
+          console.log('$scope.verbs:' + $scope.verbs);
+          console.log('$scope.adjs:' + $scope.adjs);
 
           Tags.fetch(goodString).then(function(tags) {
             query.callback(tags);
