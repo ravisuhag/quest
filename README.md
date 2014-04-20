@@ -14,7 +14,7 @@ Use any or all of the following to find desirable products on ecommerce sites. T
 - Express
 - Bootstrap
 
-### Alorithm Used
+### Alorithms Used
 - ABC
 
 
