@@ -15,7 +15,6 @@ nlp.controller('nlpCtrl', ['$scope', 'Nlpres', '$rootScope', 'Tags',
       query: function(query) {
 
         Nlpres.fetch(query.term).then(function(response) {
-          console.log(response);
 
           var nouns = new Array(),
             verbs = new Array(),
@@ -28,21 +27,11 @@ nlp.controller('nlpCtrl', ['$scope', 'Nlpres', '$rootScope', 'Tags',
             else if (ar[i].tags === "V") verbs.push(ar[i].term);
           }
 
-          console.log(goodString);
-
-          
-
-
           Tags.fetch(goodString).then(function(tags) {
             query.callback(tags);
           });
 
-
-
         });
-
-
-
       },
       formatResult: function(item) {
         return '<div>' +
