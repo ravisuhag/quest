@@ -1,4 +1,6 @@
-#GSF-Hacks 
+#Serfer
+
+ML and NLP based search tool for product catalogs. This solution was built for GSF-hacks hackathon.
 
 ####Problem Statement
 Use any or all of the following to find desirable products on ecommerce sites. This problem and data set was given by India Mart.
